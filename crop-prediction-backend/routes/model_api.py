@@ -1,13 +1,11 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS  # Import CORS extension
-import os
 import numpy as np
 import pandas
 import pickle
 
 
-# Set the working directory to the folder containing the model and scaler files
-os.chdir('D:\OPEN SOURCE\Crop Recommendation')
+
 
 # importing models
 model = pickle.load(open('D:\OPEN SOURCE\Crop Recommendation\crop-prediction-backend\models\model.pkl', 'rb'))
